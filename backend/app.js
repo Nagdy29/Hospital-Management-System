@@ -36,3 +36,5 @@ app.use(errorMiddleware);
 app.listen(process.env.PORT, () => {
   console.log(`Server listening at port ${process.env.PORT}`);
 });
+
+app.get("/", (req, res) => res.send("Hello sir"));
